@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 @Service
 public class AwsService {
 
-    private final String bucket = "testeismael";
+    private final String bucket = System.getenv("s3bucket");
     private S3Client s3;
 
     public AwsService() {
